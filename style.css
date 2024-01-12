@@ -1,0 +1,43 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+p,
+a,
+input,
+label,
+textarea,
+span,
+ul,
+li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+.custom-jumbotron {
+    background: url('picture/poster_notext_cut.webp') center/cover no-repeat;
+    /* 將 'your-image-url.jpg' 替換為您的圖片 URL */
+    color: #fff;
+    /* 設定文字顏色，以確保在圖片上可讀取 */
+    height: 80vh;
+    position: relative;
+    /* 設定相對定位 */
+}
+
+.jumbotron-content {
+    position: absolute;
+    /* 設定絕對定位 */
+    bottom: 30px;
+    /* 距離底部的距離，可以根據需要調整 */
+    left: 60%;
+    /* 設定水平位置為容器中央 */
+    transform: translateX(-50%);
+    /* 將元素水平居中 */
+}
