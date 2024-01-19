@@ -1,21 +1,30 @@
+body,
+button,
+input,
+select,
+textarea,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: Microsoft YaHei, '宋體', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
 }
 
-p,
-a,
-input,
-label,
-textarea,
-span,
-ul,
-li {
-    font-family: 'Open Sans', sans-serif;
+/* 頂部透明的 Navbar */
+.transparent-navbar {
+    background-color: rgba(183, 218, 215, 0.2);
+    /* 初始透明度為 0 */
+    transition: background-color 0.3s ease;
+    /* 使用過渡效果 */
+}
+
+/* 不透明的 Navbar */
+.opaque-navbar {
+    background-color: rgba(183, 218, 215, 1);
+    /* 滾輪滑動後的顏色 */
+    transition: background-color 0.3s ease;
 }
 
 
@@ -41,3 +50,25 @@ li {
     transform: translateX(-50%);
     /* 將元素水平居中 */
 }
+
+
+/*
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+p,
+a,
+input,
+label,
+textarea,
+span,
+ul,
+li {
+    font-family: 'Open Sans', sans-serif;
+}
+*/
