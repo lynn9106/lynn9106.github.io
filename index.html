@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -14,6 +14,7 @@
     <script src="action.js"></script>
 
     <title>NCF2024</title>
+
 </head>
 
 <body>
@@ -27,22 +28,63 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav me-auto">
+                <ul class="navbar-nav me-auto"> <!--ms: margin start / me: margin end-->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">首頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">活動簡介</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">攤位地圖與介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">舞台活動</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">報名社團專區</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">拾獲物品清單</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">其他資訊</a>
+                    </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false">Dropdown</a>
+                            aria-expanded="false">其他資訊</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">交通資訊</a></li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">QA</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">參展民眾</a></li>
+                                    <li><a class="dropdown-item" href="#">社團攤位</a></li>
+                                    <li><a class="dropdown-item" href="#">表演與舞台</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
+
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">其他資訊</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">交通資訊</a></li>
+
+                            <li class="nav-item dropstart">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">QA</a>
+                                <ul class="dropdown-menu">
+
+                                    <li><a class="dropdown-item" href="#">交通資訊</a></li>
+                                    <li><a class="dropdown-item" href="#">交通資訊</a></li>
+                                    <li><a class="dropdown-item" href="#">交通資訊</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -51,7 +93,7 @@
 
     <div class="p-5 mb-4 bg-body-tertiary custom-jumbotron">
         <div class="container-fluid py-5 jumbotron-content">
-            <h1 class="display-5 fw-bold">蒼繡月</h1>
+            <h1 class="display-5 fw-bold" style="font-size: 100px;">蒼繡月</h1>
             <p class="col-md-8 fs-4">成大同人場</p>
             <button class="btn btn-primary btn-lg" type="button">了解更多</button>
         </div>

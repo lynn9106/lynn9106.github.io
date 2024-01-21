@@ -28,6 +28,22 @@ h6 {
 }
 
 
+.navbar-nav li:hover>ul.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0%;
+    left: 100%;
+    margin-top: -8px;
+
+}
+
+
 
 
 .custom-jumbotron {
@@ -42,13 +58,9 @@ h6 {
 
 .jumbotron-content {
     position: absolute;
-    /* 設定絕對定位 */
-    bottom: 30px;
-    /* 距離底部的距離，可以根據需要調整 */
+    bottom: 5%;
     left: 60%;
-    /* 設定水平位置為容器中央 */
     transform: translateX(-50%);
-    /* 將元素水平居中 */
 }
 
 
