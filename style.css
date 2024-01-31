@@ -12,25 +12,54 @@ h6 {
     font-family: Microsoft YaHei, '宋體', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
 }
 
-/* 頂部透明的 Navbar */
+
+/* NavBar */
+
+
 .transparent-navbar {
-    background-color: rgba(183, 218, 215, 0.2);
-    /* 初始透明度為 0 */
+    background-color: rgba(66, 80, 79, 0.5);
+    backdrop-filter: blur(5px);
     transition: background-color 0.3s ease;
-    /* 使用過渡效果 */
+
+    .dropdown-menu {
+        min-width: 5rem;
+        --bs-dropdown-color: #ffffff;
+        --bs-dropdown-bg: #2f383775;
+        --bs-dropdown-border-color: rgb(0 0 0 / 0%);
+        --bs-dropdown-border-radius: 0.25rem;
+        --bs-dropdown-link-color: #ffffff;
+        --bs-dropdown-link-hover-color: #ffffff;
+        --bs-dropdown-link-hover-bg: #afcbc98c;
+        --bs-dropdown-link-active-bg: #afcbc98c;
+        backdrop-filter: blur(10px);
+    }
 }
 
-/* 不透明的 Navbar */
 .opaque-navbar {
-    background-color: rgba(183, 218, 215, 1);
-    /* 滾輪滑動後的顏色 */
+    background-color: rgb(175, 203, 201);
     transition: background-color 0.3s ease;
-}
 
+
+    .dropdown-menu {
+        min-width: 5rem;
+        --bs-dropdown-color: #ffffff;
+        --bs-dropdown-bg: #afcbc9e3;
+        --bs-dropdown-border-color: rgb(175, 255, 250, 0.8);
+        --bs-dropdown-border-radius: 0.25rem;
+        --bs-dropdown-link-color: #000000;
+        --bs-dropdown-link-hover-color: #000000;
+        --bs-dropdown-link-hover-bg: #afcbc98c;
+        --bs-dropdown-link-active-bg: #afcbc98c;
+    }
+
+}
 
 .navbar-nav li:hover>ul.dropdown-menu {
     display: block;
 }
+
+
+
 
 .dropdown-submenu {
     position: relative;
@@ -39,21 +68,24 @@ h6 {
 .dropdown-submenu>.dropdown-menu {
     top: 0%;
     left: 100%;
-    margin-top: -8px;
+    margin-top: -2px;
 
 }
 
 
+.header {
+    background: url('picture/headerImage.webp') center/cover no-repeat;
+    position: relative;
+    height: 100vh;
+}
 
 
+/* jumbotron */
 .custom-jumbotron {
     background: url('picture/poster_notext_cut.webp') center/cover no-repeat;
-    /* 將 'your-image-url.jpg' 替換為您的圖片 URL */
     color: #fff;
-    /* 設定文字顏色，以確保在圖片上可讀取 */
     height: 80vh;
     position: relative;
-    /* 設定相對定位 */
 }
 
 .jumbotron-content {
@@ -62,6 +94,8 @@ h6 {
     left: 60%;
     transform: translateX(-50%);
 }
+
+
 
 
 /*

@@ -19,36 +19,60 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top transparent-navbar">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top transparent-navbar">
+        <div class="container">
             <a class="navbar-brand mb-0 h1">成大蒼繡月NCF</a>
+            <a class="font-rubik text-2xl font-bold" href="#"
+                style="background: linear-gradient(90deg, rgba(175, 203, 201, 0.8) 50%, rgba(242, 242, 48, 0.75) 25%, rgb(202, 205, 255) 100%) text; color: transparent;">NCF
+                2024</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav me-auto"> <!--ms: margin start / me: margin end-->
+                <ul class="navbar-nav ms-auto me-4"> <!--ms: margin start / me: margin end-->
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">首頁</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">活動簡介</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">活動簡介</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">場規</a></li>
+                            <li><a class="dropdown-item" href="#">活動周邊地圖</a></li>
+                            <li><a class="dropdown-item" href="#">活動會場服務</a></li>
+                        </ul>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#">攤位地圖與介紹</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">舞台活動</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">舞台活動</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">簡介與規定</a></li>
+                            <li><a class="dropdown-item" href="#">報名表單</a></li>
+                            <li><a class="dropdown-item" href="#">節目表</a></li>
+                            <li><a class="dropdown-item" href="#">商演/地偶簡介</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">報名社團專區</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">報名社團專區</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">攤位配置與錄取表單</a></li>
+                            <li><a class="dropdown-item" href="#">場前場後宅配</a></li>
+                        </ul>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#">拾獲物品清單</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">其他資訊</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -66,38 +90,32 @@
                             </li>
                         </ul>
                     </li>
-
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false">其他資訊</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">交通資訊</a></li>
-
-                            <li class="nav-item dropstart">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                                    aria-expanded="false">QA</a>
-                                <ul class="dropdown-menu">
-
-                                    <li><a class="dropdown-item" href="#">交通資訊</a></li>
-                                    <li><a class="dropdown-item" href="#">交通資訊</a></li>
-                                    <li><a class="dropdown-item" href="#">交通資訊</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li> -->
                 </ul>
             </div>
         </div>
     </nav>
 
-
-    <div class="p-5 mb-4 bg-body-tertiary custom-jumbotron">
-        <div class="container-fluid py-5 jumbotron-content">
-            <h1 class="display-5 fw-bold" style="font-size: 100px;">蒼繡月</h1>
-            <p class="col-md-8 fs-4">成大同人場</p>
-            <button class="btn btn-primary btn-lg" type="button">了解更多</button>
+    <header class="header">
+        <div class="container p-relative">
+            <div class="col-lg-7 offset-lg-6">
+                <img src="./picture/character.webp" class="person-image pos-3d" data-layer="7" data-invert="1" alt=""
+                    style=" width: 100%; height: auto;">
+            </div>
         </div>
-    </div>
+    </header>
+
+
+
+
+
+
+    <!-- <div class=" p-5 mb-4 bg-body-tertiary custom-jumbotron">
+                <div class="container-fluid py-5 jumbotron-content">
+                    <h1 class="display-5 fw-bold" style="font-size: 100px;">蒼繡月</h1>
+                    <p class="col-md-8 fs-4">成大同人場</p>
+                    <button class="btn btn-primary btn-lg" type="button">了解更多</button>
+                </div>
+            </div> -->
 
 
     <div class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2">
