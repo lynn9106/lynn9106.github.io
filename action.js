@@ -44,7 +44,7 @@ function add3d(element, e) {
     const o_x = w_w / 2;
     const o_y = w_h / 2;
 
-    // 兩者的距離差
+    // 計算滑鼠位置和元素位置之間的距離差
     let w_x = m_x - o_x;
     let w_y = m_y - o_y;
 
@@ -60,5 +60,5 @@ function add3d(element, e) {
 
     let d_x = s_x * d;
     // 加入樣式
-    element.style.transform = `translateX(${invert ? d_x : -d_x}px)`;
+    element.style.transform = `translateX(${invert ? d_x : -d_x}px)`;   //使用 translateX 樣式屬性將元素水平平移，根據 data-invert 屬性的值，可以設置方向
 }
