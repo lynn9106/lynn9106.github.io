@@ -12,6 +12,23 @@ h6 {
     font-family: Microsoft YaHei, '宋體', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
 }
 
+.font-rubik {
+    font-family: 'Rubik', sans-serif;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-2xl {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+.text-xl {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
 
 /* NavBar */
 
