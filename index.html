@@ -3,297 +3,67 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap" rel="stylesheet">
 
-
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="action.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 
+    <script src="js/action.js"></script>
+    <script src="js/luxy.min.js"></script>
     <title>NCF2024</title>
-
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-xl navbar-dark fixed-top transparent-navbar">
-        <div class="container">
-            <a class="
-            font-rubik text-2xl font-bold" href="index.html"
-                style="background: linear-gradient(90deg, rgba(83, 128, 176, 0.8) 0%, rgba(146, 127, 127, 0.75) 58.96%, rgb(187,161,182) 100%) text; color: transparent;">NCF
-                2024</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav ms-auto" style="margin-right: 4rem!important; gap: 0.8rem;">
-                    <!--ms: margin start / me: margin end-->
-                    <li class="nav-item dropdown">
-                        <a class="font-rubik text-xl font-bold nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                            aria-expanded="false" href="intro.html">活動簡介</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="font-rubik text-xl font-bold dropdown-item" href="intro.html#rules">場規</a>
-                            </li>
-                            <li><a class="font-rubik text-xl font-bold dropdown-item" href="intro.html#map">活動周邊地圖</a>
-                            </li>
-                            <li><a class="font-rubik text-xl font-bold dropdown-item"
-                                    href="intro.html#service">活動會場服務</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="font-rubik text-xl font-bold nav-link" href="#">攤位地圖與介紹</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="font-rubik text-xl font-bold nav-link dropdown-toggle" href="#"
-                            data-bs-toggle="dropdown" aria-expanded="false">舞台活動</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="font-rubik text-xl font-bold dropdown-item" href="#">簡介與規定</a></li>
-                            <li><a class="font-rubik text-xl font-bold dropdown-item" href="#">報名表單</a></li>
-                            <li><a class="font-rubik text-xl font-bold dropdown-item" href="#">節目表</a></li>
-                            <li><a class="font-rubik text-xl font-bold dropdown-item" href="#">商演/地偶簡介</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="font-rubik text-xl font-bold nav-link dropdown-toggle" href="#"
-                            data-bs-toggle="dropdown" aria-expanded="false">報名社團專區</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="font-rubik text-xl font-bold dropdown-item" href="#">攤位配置與錄取表單</a></li>
-                            <li><a class="font-rubik text-xl font-bold dropdown-item" href="#">場前場後宅配</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="font-rubik text-xl font-bold nav-link" href="#">拾獲物品清單</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="font-rubik text-xl font-bold nav-link dropdown-toggle" href="#"
-                            data-bs-toggle="dropdown" aria-expanded="false">其他資訊</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="font-rubik text-xl font-bold dropdown-item" href="#">交通資訊</a></li>
-                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">QA</a>
-                                <ul class="dropdown-menu">
-                                    <div style="overflow-y:auto;">
-                                        <li><a class="font-rubik text-xl font-bold dropdown-item" href="#">參展民眾</a></li>
-                                        <li><a class="font-rubik text-xl font-bold dropdown-item" href="#">社團攤位</a></li>
-                                        <li><a class="font-rubik text-xl font-bold dropdown-item" href="#">表演與舞台</a>
-                                        </li>
-                                    </div>
-                                </ul>
+    <div w3-include-html="header.html"></div>
+    <!-- Optional JavaScript -->
+    <script>
+        w3.includeHTML();
+    </script>
 
 
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+
+    <div class="header">
+        <div id="luxy" class="container-fluid">
+            <div class="luxy-el col-lg-5 offset-lg-5" data-speed-y="-10" data-offset="0">
+                <img src="./picture/character_no_bg.webp" class="person-image" alt=""
+                    style="  max-width: 100%; max-height: 100%;">
+                <!-- pos-3d" data-layer="20" data-invert="1" -->
             </div>
+            <div class="luxy-el test" data-speed-y="10" data-offset="0"></div>
+
         </div>
-    </nav>
-
-    <header class="header">
-        <div class="container p-relative">
-            <div class="col-lg-7 offset-lg-6">
-                <img src="./picture/character_no_bg.webp" class="person-image pos-3d" data-layer="7" data-invert="1"
-                    alt="" style=" width: 100%; height: auto;">
-            </div>
-        </div>
-    </header>
-
-
-
-
-
-
-    <!-- <div class=" p-5 mb-4 bg-body-tertiary custom-jumbotron">
-                <div class="container-fluid py-5 jumbotron-content">
-                    <h1 class="display-5 fw-bold" style="font-size: 100px;">蒼繡月</h1>
-                    <p class="col-md-8 fs-4">成大同人場</p>
-                    <button class="btn btn-primary btn-lg" type="button">了解更多</button>
-                </div>
-            </div> -->
-
-
-
-
-
-    <!--
-
-
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Expand at sm</a>
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="navbar-collapse collapse" id="navbarsExample03" style="">
-            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form role="search">
-              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            </form>
-          </div>
-        </div>
-      </nav>
-
-
-
-
-
-
-
-
-
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Open+Sans&display=swap"
-        rel="stylesheet">
-
-
-
-
-    <nav class="navbar navbar-expand-sm navbar-light bg-light" aria-label="Fourth navbar example">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Expand at md</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
-                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarsExample04">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false">Dropdown</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form role="search">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                </form>
-            </div>
-        </div>
-    </nav>
-
-
-    <div class="ratio ratio-16x9">
-        <iframe src="https://www.youtube.com/embed/L6pfAqIXrM4?si=l700VeK0V95XRV6x" title="YouTube video"
-            style="max-width: 60%;height: 60%;" allowfullscreen></iframe>
-    </div>
-
-    <div class="embed-responsive embed-responsive-16by9 text-center">
-        <iframe class="embed-responsive-item" width="860" height="480"
-            src="https://www.youtube.com/embed/L6pfAqIXrM4?si=l700VeK0V95XRV6x" title="YouTube video player"
-            allowfullscreen></iframe>
     </div>
 
 
-
-
-
-
-
-
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-
-
-
-
-    <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white" style="background-image: url(" img
-        src=picture/poster_notext_cut.webp;">
-        <h1 class="mb-3 h2">Jumbotron</h1>
-
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium
-            labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum
-            neque maiores dolorem unde? Aut dolorum quod excepturi fugit.
-        </p>
+    <div class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2">
+        <div class="ratio ratio-16x9 text-center mt-4 mb-4 ">
+            <iframe src="https://www.youtube.com/embed/L6pfAqIXrM4?si=l700VeK0V95XRV6x"
+                style="max-width: 100%;height: 100%;" allowfullscreen></iframe>
+        </div>
     </div>
- -->
-
-    <!--
-    <section id="intro ">
-        <div class="card text-bg-dark">
-            <img src="picture/poster_notext.webp" class="card-img" alt="...">
-            <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-
-    </section>
 
 
-
-    <section id='intro'>
-
-        <div class='jumbotron'>
-
-            <div class='container'>
-                <div class="col-md-12">
-                    <h1>蒼繡月</h1>
-                    <p class='lead'>成大同人場</p>
-                    <a class='btn' href="#">了解更多</a>
-                </div>
-            </div>
-        </div>
-    </section>
--->
-
-
-
-
-
-
-
-
-
+    <script>
+        luxy.init();
+    </script>
 
 </body>
 
 </html>
+
+
+
+
+
+<!-- <div id="luxy" style="width: 100%; position: fixed; transform: translate3d(0px, 0px, 0px);">
+                <div class="luxy-el test" data-speed-y="5" data-offset="0"
+                    style="transform: translate3d(0px, 0px, 0px);"></div>
+ </div> -->
