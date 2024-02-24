@@ -3,13 +3,15 @@ button,
 input,
 select,
 textarea,
+p,
+pre,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: '宋體', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    font-family: Noto Sans TC, Lato, sans-serif;
 }
 
 .font-rubik {
@@ -192,6 +194,47 @@ h6 {
 
 
 
+.item-block {
+    /* margin-top: 10vh; */
+    margin-bottom: 10vh;
+    display: grid;
+    place-items: center;
+}
+
+.item-block-style {
+    letter-spacing: 5px;
+    line-height: 2.5rem;
+    margin-top: 10vh;
+    background-color: #ffffff46;
+    height: 88vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #cce1e0;
+}
+
+.item-title {
+    color: white;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+
+.service-rules {
+    background-color: #0d2238c4;
+    border-radius: 5px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.service-title {
+    font-size: 1.8rem;
+    line-height: 0.5;
+}
+
+
 
 footer {
     background-color: #263e4f9f;
@@ -222,34 +265,6 @@ footer {
     margin-right: 10px;
     margin-left: 10px;
 }
-
-/* :root {
-    --percentage: 0%;
-} */
-
-/* .fadeInText {
-    position: sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.fadeInText>pre {
-    color: #ffffff;
-    background-image: linear-gradient(75deg, rgba(255, 255, 255, 1)0%, rgba(255, 255, 255, 1)33.33%, rgba(255, 255, 255, 0)66.67%, rgba(255, 255, 255, 0)100%);
-    background-size: 300% 100%;
-    background-position-x: calc(190% - var(--percentage));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-} */
-
-
-
-
-
 
 
 
@@ -289,3 +304,26 @@ li {
     font-family: 'Open Sans', sans-serif;
 }
 */
+
+/* :root {
+    --percentage: 0%;
+} */
+
+/* .fadeInText {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fadeInText>pre {
+    color: #ffffff;
+    background-image: linear-gradient(75deg, rgba(255, 255, 255, 1)0%, rgba(255, 255, 255, 1)33.33%, rgba(255, 255, 255, 0)66.67%, rgba(255, 255, 255, 0)100%);
+    background-size: 300% 100%;
+    background-position-x: calc(190% - var(--percentage));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+} */

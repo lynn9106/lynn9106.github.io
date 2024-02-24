@@ -21,24 +21,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const fadeInText = document.querySelector('.fadeInText');
     if (fadeInText) {
         const fadeInTrigger = -(fadeInText.parentElement.offsetTop - window.innerHeight * 0.75);
-        // 设置滚动事件监听器
         document.addEventListener('scroll', function () {
-            // 获取滚动位置
             const scrollPosition = window.scrollY;
-            // 如果滚动位置超过了触发点，添加淡入效果
             if (scrollPosition > fadeInTrigger - 20 && scrollPosition < (fadeInTrigger + fadeInText.parentElement.offsetHeight)) {
                 fadeInText.classList.add('fade-in');
                 fadeInText.classList.remove('fade-out');
-                console.log("FadeIn");
             } else {
-                // 如果滚动位置小于触发点，移除淡入效果
                 fadeInText.classList.remove('fade-in');
                 fadeInText.classList.add('fade-out');
-                console.log("FadeOut");
             }
 
-            console.log(scrollPosition);
-            console.log(fadeInTrigger)
         });
     } else {
         console.error('No element with class "fadeInText pre" found');
