@@ -9,7 +9,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Microsoft YaHei, '宋體', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    font-family: '宋體', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
 }
 
 .font-rubik {
@@ -29,6 +29,14 @@ h6 {
     font-size: 1.2rem;
     line-height: 2rem;
 }
+
+
+:root {
+    --theme-color: #affffa;
+}
+
+
+
 
 /* NavBar */
 
@@ -61,7 +69,7 @@ h6 {
         min-width: 5rem;
         --bs-dropdown-color: #ffffff;
         --bs-dropdown-bg: #afcbc9e3;
-        --bs-dropdown-border-color: rgb(175, 255, 250, 0.8);
+        --bs-dropdown-border-color: rgba(var(--theme-color), 0.2);
         --bs-dropdown-border-radius: 0.25rem;
         --bs-dropdown-link-color: #000000;
         --bs-dropdown-link-hover-color: #000000;
@@ -75,7 +83,6 @@ h6 {
     display: block;
 }
 
-
 .dropdown-submenu {
     position: relative;
 }
@@ -88,22 +95,164 @@ h6 {
 }
 
 
-.header {
-    /* background: url('picture/headerImage.webp') center/cover no-repeat; */
-    position: relative;
-    height: 100vh;
-}
 
-
-.test {
-    background: url('picture/test.png') center/cover no-repeat;
-    position: absolute;
+/* index */
+.index-bg {
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
     width: 100%;
     height: 100%;
-    top: 0px;
-    left: 0;
-    z-index: -1;
+    background-image: radial-gradient(ellipse at 50% 60%, #608e8bcc 0%, #0d2238 100%);
 }
+
+
+
+
+
+#particles-one {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#particles-two {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+
+/* Background */
+.intro-bg {
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url('./picture/headerImage.webp');
+}
+
+#simple-intro {
+    color: #ffffff;
+    margin-top: 5%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fadeInText {
+    opacity: 0;
+}
+
+.fade-in {
+    animation: fadeInAnimation ease 3s;
+    animation-fill-mode: forwards;
+}
+
+.fade-out {
+    animation: fadeOutAnimation ease 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutAnimation {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+
+footer {
+    background-color: #263e4f9f;
+    text-align: center;
+    color: var(--theme-color);
+
+}
+
+#page-top a {
+    box-sizing: border-box;
+    display: block;
+    color: #62907e;
+    padding: 5px;
+}
+
+#page-top a:hover {
+    background: #c1ffe635;
+}
+
+.info-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-link>* {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* :root {
+    --percentage: 0%;
+} */
+
+/* .fadeInText {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fadeInText>pre {
+    color: #ffffff;
+    background-image: linear-gradient(75deg, rgba(255, 255, 255, 1)0%, rgba(255, 255, 255, 1)33.33%, rgba(255, 255, 255, 0)66.67%, rgba(255, 255, 255, 0)100%);
+    background-size: 300% 100%;
+    background-position-x: calc(190% - var(--percentage));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+} */
+
+
+
+
+
+
+
+
 
 /* jumbotron
 .custom-jumbotron {

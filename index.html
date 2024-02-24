@@ -22,39 +22,107 @@
 </head>
 
 <body>
-    <div w3-include-html="header.html"></div>
+    <header w3-include-html="header.html"></header>
     <!-- Optional JavaScript -->
     <script>
         w3.includeHTML();
     </script>
-
-
-
-    <div class="header">
-        <div id="luxy" class="container-fluid">
-            <div class="luxy-el col-lg-5 offset-lg-5" data-speed-y="-10" data-offset="0">
-                <img src="./picture/character_no_bg.webp" class="person-image" alt=""
-                    style="  max-width: 100%; max-height: 100%;">
-                <!-- pos-3d" data-layer="20" data-invert="1" -->
+    <main>
+        <div class="index-bg"></div>
+        <section id="top-img" style="width: 100vw;height: 100vh;">
+            <div id="particles-two" style="position: absolute; z-index: 4;"><canvas class="particles-js-canvas-el"
+                    style="width: 100%; height: 100%;"></canvas>
             </div>
-            <div class="luxy-el test" data-speed-y="10" data-offset="0"></div>
+            <div id="luxy" style="width:100%; height: 100%;position: relative; z-index: 2;">
+                <div class="col-10 col-xl-5 offset-xl-6 luxy-el" data-speed-y="10" data-offset="0"
+                    style="position: absolute; z-index: 2;">
+                    <img src="./picture/character_no_bg.webp" alt="" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
 
+            <div id="title_info" style="top:40vh;position: relative; z-index: 3;">
+                <img src="./picture/title.png" class="row col-10 col-xl-4 offset-xl-2" alt="">
+                <img src="./picture/subtitle.png" class="row col-8 offset-1 col-xl-3 offset-xl-2"
+                    style="margin-left: 18%;" alt="">
+                <div class="row col-8 offset-1 col-xl-6 offset-xl-2"
+                    style="margin-left: 18%;display: flex; justify-content: center; align-items: center;">
+                    <p class="font-rubik text-2xl font-bold"
+                        style="background: linear-gradient(90deg, rgba(183, 218, 255, 0.8) 0%, rgba(210, 255, 252, 0.8) 20%, rgb(255, 255, 255) 100%) text; color: transparent;">
+                        2024.04.20 - 2024.04.21</p>
+                </div>
+            </div>
+
+            <div id="particles-one" style="position: absolute; z-index: 1;"><canvas class="particles-js-canvas-el"
+                    style="width: 100%; height: 100%;"></canvas>
+            </div>
+
+        </section>
+
+        <section id="Poster-sec"
+            style="position: relative; max-width: 100vw;max-height: 100vh; width: auto; height: auto;">
+
+            <div class="row" style="    margin-top: 20vh;
+            margin-bottom: 10vh;">
+                <img src="./picture/poster.webp" alt="" class="col-10 offset-1 col-xl-3 offset-xl-2">
+
+                <div id="simple-intro" class="col fadeInText fade-in fade-out ">
+                    <pre class="fs-2 font-bold">
+日　期　: 2024.04.20-2024.04.21
+時　間　: 社團入場 9:00-10:00
+  　  　　一般入場 10:00-16:00
+地　點　: 國立成功大學 學生活動中心1F
+主辦單位: 國立成功大學 漫畫社
+指導單位: 國立成功大學 學生活動發展組</pre>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- particles.js container -->
+        <script src="js/particles.min.js"></script>
+        <script src="js/app.js"></script>
+
+
+    </main>
+
+
+    <footer style="position:relative;width: 100vw; height: 35vh;">
+        <div id="page-top"><a href="#"><img src="./picture/up-arrow.png"></a></div>
+
+
+        <div class="info">
+            <div class="fs-3 font-bold">成大同人場</div>
+            <div class="fs-5 font-bold" style="margin-bottom: 15px;">NCKU COMIC FESTIVAL</div>
+            <div class="info-link container" style="margin-bottom: 12px;">
+                <a href="https://www.facebook.com/nckudoujinexpo" target="_blank">
+                    <picture>
+                        <img src="./picture/facebook.png" alt="Facebook">
+                    </picture>
+                </a>
+                <a href="https://www.instagram.com/ncku_comic_festival/" target="_blank">
+                    <picture>
+                        <img src="./picture/instagram.png" alt="Instagram">
+                    </picture>
+                </a>
+                <a href="https://www.plurk.com/NCKUcomic_OLAOLA" target="_blank">
+                    <picture>
+                        <img src="./picture/plurk.png" alt="Plurk">
+                    </picture>
+                </a>
+            </div>
+            <div class="fs-5"><a href="mailto:nckudoujin@proton.me" style="text-decoration: none; color:#c1ffe6ce">
+                    nckudoujin@proton.me
+                </a></div>
         </div>
-    </div>
+
+    </footer>
 
 
-    <div class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2">
-        <div class="ratio ratio-16x9 text-center mt-4 mb-4 ">
-            <iframe src="https://www.youtube.com/embed/L6pfAqIXrM4?si=l700VeK0V95XRV6x"
-                style="max-width: 100%;height: 100%;" allowfullscreen></iframe>
-        </div>
-    </div>
 
 
     <script>
         luxy.init();
     </script>
-
 </body>
 
 </html>
@@ -67,3 +135,33 @@
                 <div class="luxy-el test" data-speed-y="5" data-offset="0"
                     style="transform: translate3d(0px, 0px, 0px);"></div>
  </div> -->
+
+
+<!-- <div class="top">
+        <div id="luxy" class="container-fluid">
+            <div class="luxy-el" data-speed-y="10" data-offset="0">
+                <img src="./picture/test.png" style="z-index: -1;  max-width: 100%; max-height: 100%;">
+            </div>
+        </div>
+        <div class="col-lg-5 offset-lg-5">
+            <img src="./picture/character_no_bg.webp" class="person-image" alt=""
+                style="  max-width: 100%; max-height: 100%;">
+        </div>
+    </div> -->
+
+
+<!-- <div class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2">
+        <div class="ratio ratio-16x9 text-center mt-4 mb-4 ">
+            <iframe src="https://www.youtube.com/embed/L6pfAqIXrM4?si=l700VeK0V95XRV6x"
+                style="max-width: 100%;height: 100%;" allowfullscreen></iframe>
+        </div>
+    </div> -->
+
+
+<!-- pos-3d" data-layer="20" data-invert="1" -->
+
+
+<!-- <div id="luxy" style="  max-width: 100%; max-height: 100%; z-index: -1;">
+            <img src="./picture/test.png" class="luxy-el col-lg-5 offset-lg-2" data-speed-y="10" data-offset="0" alt=""
+                style="max-width: 100%; max-height: 100%;">
+        </div> -->
