@@ -168,7 +168,7 @@ h6 {
 }
 
 .fade-out {
-    animation: fadeOutAnimation ease 3s;
+    animation: fadeOutAnimation ease 1s;
     animation-fill-mode: forwards;
 }
 

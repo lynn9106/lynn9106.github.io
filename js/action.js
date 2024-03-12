@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const fadeInTrigger = -(fadeInText.parentElement.offsetTop - window.innerHeight * 0.75);
         document.addEventListener('scroll', function () {
             const scrollPosition = window.scrollY;
-            if (scrollPosition > fadeInTrigger - 20 && scrollPosition < (fadeInTrigger + fadeInText.parentElement.offsetHeight)) {
+            if (scrollPosition > fadeInTrigger - 5) {  // && scrollPosition < (fadeInTrigger + fadeInText.parentElement.offsetHeight) #超出也會淡出
                 fadeInText.classList.add('fade-in');
                 fadeInText.classList.remove('fade-out');
             } else {
