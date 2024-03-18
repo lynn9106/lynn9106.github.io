@@ -111,9 +111,6 @@ h6 {
 }
 
 
-
-
-
 #particles-one {
     top: 0;
     left: 0;
@@ -146,6 +143,9 @@ h6 {
     width: 100%;
     height: 100%;
     background-image: url('./picture/headerImage.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #simple-intro {
@@ -202,36 +202,46 @@ h6 {
 }
 
 .item-block-style {
-    letter-spacing: 5px;
-    line-height: 2.5rem;
+    position: relative;
+    letter-spacing: 3px;
+    line-height: calc(2rem + 2vh);
     margin-top: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     background-color: #ffffff46;
-    height: 88vh;
+    height: auto;
     width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #cce1e0;
+    font-size: calc(0.625rem + 1.2vw);
+    /* 以視窗寬度作為基礎字體大小 root fontsize:16px 0.625rem = 10px*/
 }
 
 .item-title {
     color: white;
     font-size: 2.5rem;
-    line-height: 1;
+    line-height: calc(2.5rem + 1vh);
 }
 
 
 .service-rules {
     background-color: #0d2238c4;
     border-radius: 5px;
-    padding: 20px;
-    line-height: 1.5;
+    width: auto;
+    padding: 5%;
+    margin: 5%;
+    line-height: calc(2rem + 1.5vh);
+    font-size: calc(0.625rem + 1vw);
 }
 
 .service-title {
-    font-size: 1.8rem;
-    line-height: 0.5;
+    font-size: 2rem;
+    line-height: 0.5rem;
+    padding-bottom: 1rem;
+    color: white;
 }
 
 

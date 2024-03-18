@@ -37,6 +37,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+
+function navigateTo(id) {
+    var element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+
+
+
+
+
+
+
 // document.addEventListener('DOMContentLoaded', function () {
 //     const fadeInText = document.querySelector('.fadeInText pre');
 //     if (fadeInText) {
