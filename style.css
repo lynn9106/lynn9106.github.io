@@ -1,5 +1,7 @@
 :root {
-    scroll-behavior: smooth !important;
+    /* scroll-behavior: smooth !important; */
+    --theme-color: #affffa;
+    overflow-x: hidden;
 }
 
 body,
@@ -37,9 +39,7 @@ h6 {
 }
 
 
-:root {
-    --theme-color: #affffa;
-}
+
 
 
 

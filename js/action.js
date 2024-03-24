@@ -38,6 +38,19 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+        var topOffset = section.getBoundingClientRect().top;
+        window.scrollTo({
+            top: window.scrollY + topOffset,
+            behavior: 'smooth'
+        });
+    }
+}
+
+
 // function navigateTo(id) {
 //     var element = document.getElementById(id);
 //     if (element) {
