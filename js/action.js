@@ -33,12 +33,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
         });
     } else {
-        console.error('No element with class "fadeInText pre" found');
+        console.log('No element with class "fadeInText pre" found');
     }
 });
 
+document.querySelectorAll('a.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
+        // Get the target element based on the href attribute
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
 
-
+        // Scroll to the target element smoothly
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+    });
+});
 
 

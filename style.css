@@ -28,19 +28,14 @@ h6 {
 }
 
 .text-2xl {
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: calc(1.8rem + 1.2vw);
+    line-height: calc(2rem + 1.2vh);
 }
 
 .text-xl {
     font-size: 1.2rem;
     line-height: 2rem;
 }
-
-
-
-
-
 
 
 /* NavBar */
@@ -134,6 +129,121 @@ h6 {
     background-repeat: no-repeat;
 }
 
+.character {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#simple-intro {
+    color: #ffffff;
+    margin-top: 1vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 在 xl 以上的尺寸 */
+@media (min-width: 1200px) {
+    .character {
+        margin-left: 20vw;
+        margin-right: auto;
+        width: 70vw;
+        height: auto;
+    }
+
+    .title {
+        margin-top: 5vh;
+        margin-left: 15vw;
+        width: 30vw;
+        height: auto;
+    }
+
+    .subtitle {
+        margin-left: 20vw;
+        width: 35vw;
+        height: auto;
+    }
+
+    .date {
+        margin-left: 21vw;
+    }
+
+    .postintro {
+        line-height: calc(1.5rem + 4vh);
+        font-size: calc(1.2rem + 1vw);
+        margin-top: 15vh;
+    }
+
+}
+
+/* 在 md 以上 xl 以下的尺寸 */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .character {
+        margin-left: -20vw;
+        margin-right: auto;
+        width: auto;
+        height: 75vh;
+    }
+
+    .title {
+        margin-top: 5vh;
+        margin-left: 5vw;
+        width: 50vw;
+        height: auto;
+    }
+
+    .subtitle {
+        margin-left: 15vw;
+        width: 50vw;
+        height: auto;
+    }
+
+    .date {
+        margin-left: 16vw;
+    }
+
+    .postintro {
+        line-height: calc(1.5rem + 4vh);
+        font-size: calc(1.6rem + 1.2vw);
+        margin-top: 5vh;
+    }
+
+}
+
+/* 在 md 以下的尺寸 */
+@media (max-width: 767px) {
+    .character {
+        margin-left: -60vw;
+        margin-right: auto;
+        width: auto;
+        height: 75vh;
+    }
+
+    .title {
+        margin-left: 5vw;
+        width: 70vw;
+        height: auto;
+    }
+
+    .subtitle {
+        width: 60vw;
+        height: auto;
+        margin-left: 15vw;
+    }
+
+    .date {
+        margin-left: 16vw;
+    }
+
+    .postintro {
+        line-height: calc(1rem + 3vh);
+        font-size: calc(1rem + 0.8vw);
+        margin-top: 5vh;
+    }
+}
+
 
 
 /* Background */
@@ -151,15 +261,7 @@ h6 {
     background-repeat: no-repeat;
 }
 
-#simple-intro {
-    color: #ffffff;
-    margin-top: 5%;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .fadeInText {
     opacity: 0;
