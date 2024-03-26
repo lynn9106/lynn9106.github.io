@@ -33,7 +33,7 @@ h6 {
 }
 
 .text-xl {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 2rem;
 }
 
@@ -108,7 +108,6 @@ h6 {
     background-image: radial-gradient(ellipse at 50% 60%, #608e8bcc 0%, #0d2238 100%);
 }
 
-
 #particles-one {
     top: 0;
     left: 0;
@@ -129,11 +128,6 @@ h6 {
     background-repeat: no-repeat;
 }
 
-.character {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #simple-intro {
     color: #ffffff;
     margin-top: 1vh;
@@ -143,108 +137,6 @@ h6 {
     justify-content: center;
     align-items: center;
 }
-
-/* 在 xl 以上的尺寸 */
-@media (min-width: 1200px) {
-    .character {
-        margin-left: 20vw;
-        margin-right: auto;
-        width: 70vw;
-        height: auto;
-    }
-
-    .title {
-        margin-top: 5vh;
-        margin-left: 15vw;
-        width: 30vw;
-        height: auto;
-    }
-
-    .subtitle {
-        margin-left: 20vw;
-        width: 35vw;
-        height: auto;
-    }
-
-    .date {
-        margin-left: 21vw;
-    }
-
-    .postintro {
-        line-height: calc(1.5rem + 4vh);
-        font-size: calc(1.2rem + 1vw);
-        margin-top: 15vh;
-    }
-
-}
-
-/* 在 md 以上 xl 以下的尺寸 */
-@media (min-width: 768px) and (max-width: 1199px) {
-    .character {
-        margin-left: -20vw;
-        margin-right: auto;
-        width: auto;
-        height: 75vh;
-    }
-
-    .title {
-        margin-top: 5vh;
-        margin-left: 5vw;
-        width: 50vw;
-        height: auto;
-    }
-
-    .subtitle {
-        margin-left: 15vw;
-        width: 50vw;
-        height: auto;
-    }
-
-    .date {
-        margin-left: 16vw;
-    }
-
-    .postintro {
-        line-height: calc(1.5rem + 4vh);
-        font-size: calc(1.6rem + 1.2vw);
-        margin-top: 5vh;
-    }
-
-}
-
-/* 在 md 以下的尺寸 */
-@media (max-width: 767px) {
-    .character {
-        margin-left: -60vw;
-        margin-right: auto;
-        width: auto;
-        height: 75vh;
-    }
-
-    .title {
-        margin-left: 5vw;
-        width: 70vw;
-        height: auto;
-    }
-
-    .subtitle {
-        width: 60vw;
-        height: auto;
-        margin-left: 15vw;
-    }
-
-    .date {
-        margin-left: 16vw;
-    }
-
-    .postintro {
-        line-height: calc(1rem + 3vh);
-        font-size: calc(1rem + 0.8vw);
-        margin-top: 5vh;
-    }
-}
-
-
 
 /* Background */
 .intro-bg {
@@ -260,8 +152,6 @@ h6 {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
 
 .fadeInText {
     opacity: 0;
@@ -297,10 +187,8 @@ h6 {
     }
 }
 
-
-
+/* others */
 .item-block {
-    /* margin-top: 10vh; */
     margin-bottom: 10vh;
     display: grid;
     place-items: center;
@@ -309,7 +197,6 @@ h6 {
 .item-block-style {
     position: relative;
     letter-spacing: 3px;
-    line-height: calc(2rem + 2vh);
     margin-top: 10vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -321,21 +208,12 @@ h6 {
     justify-content: center;
     align-items: center;
     color: #cce1e0;
-    font-size: calc(0.625rem + 1.2vw);
-    /* 以視窗寬度作為基礎字體大小 root fontsize:16px 0.625rem = 10px*/
 }
-
-.item-title {
-    color: white;
-    font-size: 2.5rem;
-    line-height: calc(2.5rem + 1vh);
-}
-
 
 .service-rules {
     background-color: #0d2238c4;
     border-radius: 5px;
-    width: auto;
+    max-width: 70vw;
     padding: 5%;
     margin: 5%;
     line-height: calc(2rem + 1.5vh);
@@ -350,7 +228,173 @@ h6 {
 }
 
 
+/* rwd */
+/* 在 xl 以上的尺寸 */
+@media (min-width: 1200px) {
 
+    /* index */
+    .character {
+        margin-left: 20vw;
+        margin-right: auto;
+        width: 70vw;
+        height: auto;
+    }
+
+    .title {
+        margin-top: 5vh;
+        margin-left: 15vw;
+        width: 30vw;
+        height: auto;
+    }
+
+    .subtitle {
+        margin-left: 20vw;
+        width: 35vw;
+        height: auto;
+    }
+
+    .date {
+        margin-left: 21vw;
+    }
+
+    .postintro {
+        line-height: calc(1.5rem + 4vh);
+        font-size: calc(1.2rem + 1vw);
+        margin-top: 15vh;
+    }
+
+    /* others */
+    .item-title {
+        color: white;
+        font-size: 2.5rem;
+        line-height: calc(2.5rem + 1vh);
+    }
+
+    .item-block-style {
+        font-size: calc(0.625rem + 1.2vw);
+        line-height: calc(2rem + 2vh);
+    }
+
+    .service-title {
+        font-size: 2rem;
+        line-height: 3rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* 在 md 以上 xl 以下的尺寸 */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    /* index */
+    .character {
+        margin-left: -20vw;
+        margin-right: auto;
+        width: auto;
+        height: 75vh;
+    }
+
+    .title {
+        margin-top: 5vh;
+        margin-left: 5vw;
+        width: 50vw;
+        height: auto;
+    }
+
+    .subtitle {
+        margin-left: 15vw;
+        width: 50vw;
+        height: auto;
+    }
+
+    .date {
+        margin-left: 16vw;
+    }
+
+    .postintro {
+        line-height: calc(1.5rem + 4vh);
+        font-size: calc(1.6rem + 1.2vw);
+        margin-top: 5vh;
+    }
+
+    /* others */
+    .item-title {
+        color: white;
+        font-size: 2.5rem;
+        line-height: calc(2.5rem + 1vh);
+    }
+
+    .item-block-style {
+        font-size: calc(0.625rem + 1.2vw);
+        line-height: calc(2rem + 2vh);
+    }
+
+    .service-title {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* 在 md 以下的尺寸 */
+@media (max-width: 767px) {
+
+    /* index */
+    .character {
+        margin-left: -60vw;
+        margin-right: auto;
+        width: auto;
+        height: 75vh;
+    }
+
+    .title {
+        margin-left: 5vw;
+        width: 70vw;
+        height: auto;
+    }
+
+    .subtitle {
+        width: 60vw;
+        height: auto;
+        margin-left: 15vw;
+    }
+
+    .date {
+        margin-left: 16vw;
+    }
+
+    .postintro {
+        line-height: calc(1rem + 3vh);
+        font-size: calc(1rem + 0.8vw);
+        margin-top: 5vh;
+    }
+
+    /* others */
+    .item-title {
+        color: white;
+        font-size: calc(1.2rem + 1vw);
+        line-height: calc(2.5rem + 1vh);
+    }
+
+    .item-block-style {
+        font-size: calc(0.625rem + 1.2vw);
+        line-height: calc(2rem + 1vh);
+    }
+
+    .service-title {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+/* footer */
 footer {
     background-color: #263e4f9f;
     text-align: center;
