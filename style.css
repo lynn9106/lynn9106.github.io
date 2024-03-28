@@ -399,7 +399,11 @@ footer {
     background-color: #263e4f9f;
     text-align: center;
     color: var(--theme-color);
-
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #page-top a {
@@ -423,4 +427,17 @@ footer {
 .info-link>* {
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.co-organizer {
+    border: 2px solid #cce1e044;
+    border-radius: 5px;
+    /* background-color: #cce1e044; */
+    width: 70vw;
+    height: 30vh;
+    margin-bottom: 5vh;
+    margin-top: 3vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
