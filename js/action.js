@@ -38,3 +38,16 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+function toggleDisplay(TitleId, BlockId, precolor = "#cce1e0", newcolor = "#ff6e6ef4") {
+    var Block = document.getElementById(BlockId);
+    var TitleButton = document.getElementById(TitleId);
+
+    if (Block.style.display === 'none') {
+        Block.style.display = '';
+        TitleButton.style.color = newcolor;
+    } else {
+        Block.style.display = 'none';
+        TitleButton.style.color = precolor;
+    }
+}
+

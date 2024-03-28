@@ -37,51 +37,156 @@
             <section id="transportations" class=" item-block" style="position: relative;">
                 <div class="item-block-style">
                     <p class="item-title font-bold">交通​資訊</p>
-                    <span>(可參考<a href="https://web.ncku.edu.tw/p/412-1000-29366.php?Lang=zh-tw">成大官網</a>)</span>
-                    <p></p>
-                    <ol class="font-bold">
-                        <li>搭乘火車</li>
-                        <p>台鐵台南站－成功大學校本部：<a href="https://maps.app.goo.gl/kPEijgefqodVviSM8">步行地圖建議</a></p>
-                        <p>1.台鐵台南站下車，後站出口。</p>
-                        <p>2.左轉大學路，步行至成功大學校本部。</p>
-                        <li>搭乘高鐵</li>
-                        <p> 高鐵台南站－台鐵台南站－成功大學校本部：高鐵台南站至台鐵台南站、台鐵到成大：<a
-                                href="https://maps.app.goo.gl/kPEijgefqodVviSM8">步行地圖建議</a></p>
-                        <p>1.高鐵台南站下車至二樓轉乘通廊或一樓大廳1號出口前往台鐵沙崙站。</p>
-                        <p>2.搭乘台鐵沙崙區間車前往台鐵台南站。</p>
-                        <p>3.抵達台鐵台南站至後站出口，左轉大學路，步行至成功大學校本部。</p>
-                        <li>自行開車</li>
-                        <p>-沿國道1號南下大灣交流道－成功大學校本部：南下</p>
-                        <p>-沿國道1號北上仁德交流道－成功大學校本部：北上</p>
-                    </ol>
+
+                    <p class="service-title font-bold">(可參考<a
+                            href="https://web.ncku.edu.tw/p/412-1000-29366.php?Lang=zh-tw" style="
+                             color:#ffc1c1ce">成大官網</a>)</p>
+                    </p>
+
+
+
+                    <div class="service-rules font-bold" style="margin: 1vh; width:70vw; padding:2%;">
+                        <a id="toggleButtonTrain" style="text-decoration: none; "
+                            onclick="toggleDisplay('toggleButtonTrain','train');" title="" type="button">搭乘火車</a>
+
+                        <div id="train" style="display: none;">
+                            <p>台鐵台南站－成功大學校本部：<a href="https://maps.app.goo.gl/kPEijgefqodVviSM8"
+                                    style="text-decoration: none; color:#ffc1c1ce">步行地圖建議</a></p>
+                            <ol>
+                                <li>台鐵台南站下車，後站出口</li>
+                                <li>沿大學路，步行至成功大學光復校區</li>
+                            </ol>
+
+                        </div>
+                    </div>
+
+                    <div class="service-rules font-bold" style="margin: 1vh;width:70vw; padding:2%;">
+                        <a id="toggleButtonHighway" style="text-decoration: none; "
+                            onclick="toggleDisplay('toggleButtonHighway','highway');" title="" type="button">搭乘高鐵</a>
+
+                        <div id="highway" style="display: none;">
+                            <p>高鐵台南站－台鐵台南站－成功大學校本部<a href="https://maps.app.goo.gl/kPEijgefqodVviSM8"
+                                    style="text-decoration: none; color:#ffc1c1ce">步行地圖建議</a></p>
+                            <ol>
+                                <li>高鐵台南站下車至二樓轉乘通廊或一樓大廳1號出口前往台鐵沙崙站</li>
+                                <li>搭乘台鐵沙崙區間車前往台鐵台南站</li>
+                                <li>抵達台鐵台南站至後站出口，沿大學路，步行至成功大學光復校區</li>
+                            </ol>
+
+                        </div>
+                    </div>
+
+                    <div class="service-rules font-bold" style="margin: 1vh;width:70vw; padding:2%;">
+                        <a id="toggleButtonCar" style="text-decoration: none; "
+                            onclick="toggleDisplay('toggleButtonCar','car');" title="" type="button">自行開車</a>
+
+                        <div id="car" style="display: none;">
+                            <p>-沿國道1號南下大灣交流道－成功大學校本部：南下</p>
+                            <p>-沿國道1號北上仁德交流道－成功大學校本部：北上</p>
+                            <p>校內不提供停車服務，請自行搜索校外付費停車場，謝謝您的諒解與配合</p>
+
+                        </div>
+                    </div>
+
+                    <div class="service-rules font-bold"
+                        style="margin: 1vh;width:70vw; padding:2%;color:#0d2238; background-color: rgba(255, 255, 255, 0.517);">
+                        <p class="font-bold">youbike 站點資訊</p>
+
+                        <div class="iframely-embed">
+                            <div class="iframely-responsive" style="height: 5vh; padding-bottom: 0;"><a
+                                    href="https://www.youbike.com.tw/region/main/stations/"
+                                    data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.youbike.com.tw%2Fregion%2Fmain%2Fstations%2F&key=9f5f91e2487ad06aa591fec994791f28"></a>
+                            </div>
+                        </div>
+                        <script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
+                    </div>
                 </div>
             </section>
 
-            <section id="visitorQA" class=" item-block">
-                <div class="item-block-style rules-block">
-                    <p class="item-title font-bold">Q&amp;A</p>
-                    <ol class="font-bold">
-                        <li>繳費後取消報名可以退費嗎？</li>
-                        <p>可以，請您先透過郵件通知，並填寫表單(<a
-                                href="https://forms.gle/sN3m9Vze1cCHi52H9">點這裡</a>)。同時，請注意在活動前兩個月以前提出的申請可​獲得一半的費用退還，超過此期限將無法辦理退​費，敬請見諒。
-                        </p>
-                        <li>一個攤位的大小是多大呢？</li>
-                        <p>一個攤位大小是180*45*74cm，每攤位提供一張折合桌與兩張折合椅，如下圖</p>
-                        <img src="Picture/Excalty.png" alt="DaWeiBro" style="width:500px;height:300px;">
-                        <p>若需要更多椅子請現場至服務台申請(30元/張)。</p>
-                        <p style="color:red;"><b>*請勿私下轉賣攤位和椅子！</b></p>
-                        <li>社團繳費只能使用郵局轉帳嗎?</li>
-                        <p>攤位繳費可以使用其他方式，只要有​方法可確認繳費者身分並在繳費後記​得填寫回報單即可！</p>
-                        <li>連攤社團一定要同一性向嗎?</li>
-                        <p>因為成人向攤位必須在管制區域內，​所以無法接受一般向與成人向連攤，​非常抱歉。</p>
-                        <li>舞台比賽當天的服裝可以和報名​時的附檔作品不同嗎?</li>
-                        <p>可以，比賽當天的服裝、造型、主題​可以和報名時的附檔作品不同。附檔​作品僅作為證明審核用途。</p>
-                        <li>時間已經確定，不會再更改了嗎？</li>
-                        <p>很抱歉，因為我們使用的是學校場地的緣故，​必須要在事前就先向校方申請，且還有可能因​為校外單位要舉辦活動，直接取消我們使用此​場地的資格，為此我們已經非常努力了。</p>
-                    </ol>
-                </div>
-            </section>
-        </div>
+
+            <div class="container-fluid">
+
+                <section id="QA" class=" item-block" style="position: relative;">
+                    <div class="item-block-style">
+                        <p class="item-title font-bold">Q&amp;A</p>
+
+
+                        <div class="service-rules font-bold" style="margin: 1vh; width:70vw; padding:2%;">
+                            <a id="visitorQA" style="text-decoration: none; "
+                                onclick="toggleDisplay('visitorQA','Visitor');" title="" type="button">參展民眾</a>
+                            <div id="Visitor" style="display: none;">
+                                <p id="visitorQ1" style="color: white;"
+                                    onclick="toggleDisplay('visitorQ1','visitorA1','white','rgb(187,161,182)');"
+                                    title="" type="button">- 時間已經確定，不會再更改了嗎？</p>
+                                <p id="visitorA1" style="display: none; margin-left: 2.5rem;">
+                                    很抱歉，因為我們使用的是學校場地的緣故，​必須要在事前就先向校方申請，且還有可能因​為校外單位要舉辦活動，直接取消我們使用此​場地的資格，為此我們已經非常努力了。
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="service-rules font-bold" style="margin: 1vh; width:70vw; padding:2%;">
+                            <a id="standQA" style="text-decoration: none; " onclick="toggleDisplay('standQA','Stand');"
+                                title="" type="button">社團攤位</a>
+
+
+
+                            <div id="Stand" style="display: none;">
+                                <p id="standQ1" style="color: white;"
+                                    onclick="toggleDisplay('standQ1','standA1','white','rgb(187,161,182)');" title=""
+                                    type="button">- 繳費後取消報名可以退費嗎？</p>
+                                <p id="standA1" style="display: none; margin-left: 2.5rem;">可以，請您先透過郵件通知，並填寫表單(<a
+                                        href="https://forms.gle/sN3m9Vze1cCHi52H9">點這裡</a>)。同時，請注意在4/5前提出的申請將全額退還，超過此期限將無法辦理退​費，敬請見諒。
+                                </p>
+
+                                <p id="standQ2" style="color: white;"
+                                    onclick="toggleDisplay('standQ2','standA2','white','rgb(187,161,182)');" title=""
+                                    type="button">- 一個攤位的大小是多大呢？</p>
+                                <div id="standA2" style="display: none; margin-left: 2.5rem;">
+                                    <p>
+                                        一個攤位大小是180*45*74cm，每攤位提供一張折合桌與兩張折合椅，如下圖<img src="./picture/chairQA.webp"
+                                            style="margin-top: 0.5rem; width:25vw; height: auto; margin-left: 20vw;">
+                                    </p>
+                                    <p style="color:#ff6e6ef4;"><b>*請勿私下轉賣攤位和椅子！</b></p>
+
+                                </div>
+
+                                <p id="standQ3" style="color: white;"
+                                    onclick="toggleDisplay('standQ3','standA3','white','rgb(187,161,182)');" title=""
+                                    type="button">- 社團繳費只能使用郵局轉帳嗎?</p>
+                                <p id="standA3" style="display: none; margin-left: 2.5rem;">
+                                    攤位繳費可以使用其他方式，只要有​方法可確認繳費者身分並在繳費後記​得填寫回報單即可！
+                                </p>
+
+                                <p id="standQ4" style="color: white;"
+                                    onclick="toggleDisplay('standQ4','standA4','white','rgb(187,161,182)');" title=""
+                                    type="button">- 連攤社團一定要同一性向嗎?</p>
+                                <p id="standA4" style="display: none; margin-left: 2.5rem;">
+                                    因為成人向攤位必須在管制區域內，​所以無法接受一般向與成人向連攤，​非常抱歉。
+                                </p>
+
+
+                            </div>
+                        </div>
+
+                        <div class="service-rules font-bold" style="margin: 1vh; width:70vw; padding:2%;">
+                            <a id="stageQA" style="text-decoration: none; " onclick="toggleDisplay('stageQA','Stage');"
+                                title="" type="button">舞台比賽</a>
+                            <div id="Stage" style="display: none;">
+                                <p id="StageQ1" style="color: white;"
+                                    onclick="toggleDisplay('StageQ1','StageA1','white','rgb(187,161,182)');" title=""
+                                    type="button">- 舞台比賽當天的服裝可以和報名​時的附檔作品不同嗎?</p>
+                                <p id="StageA1" style="display: none; margin-left: 2.5rem;">
+                                    可以，比賽當天的服裝、造型、主題​可以和報名時的附檔作品不同。附檔​作品僅作為證明審核用途。
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
         </div>
     </main>
 
