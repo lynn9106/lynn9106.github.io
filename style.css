@@ -227,10 +227,80 @@ h6 {
     color: white;
 }
 
+/* stage */
+.group-intro {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+.group-content {
+    padding: 0;
+}
+
+.group-content-intro {
+    border: 2px solid #cce1e044;
+    border-radius: 5px;
+    overflow-y: auto;
+    color: rgb(222, 207, 185);
+}
+
+
+.carousel-indicators {
+    height: 10vh;
+    top: 0;
+    margin-top: 1rem;
+}
+
+
 
 /* rwd */
 /* 在 xl 以上的尺寸 */
 @media (min-width: 1200px) {
+
+    /* stage */
+
+    .group-photo {
+        max-width: 30vw;
+        max-height: 35vh;
+        width: auto;
+        height: auto;
+        margin-left: 10vw;
+
+    }
+
+    .straight-photo {
+        max-width: 30vw;
+        max-height: 55vh;
+    }
+
+    .group-intro {
+        width: 75vw;
+        height: 85vh;
+    }
+
+    .team-name {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .group-content {
+        margin-left: 1vw;
+        margin-top: 10vh;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        width: 30vw;
+        height: auto;
+    }
+
+    .group-content-intro {
+        margin-bottom: 2vh;
+        width: 30vw;
+        max-height: 25vh;
+        padding: 8px;
+    }
+
+
 
     /* index */
     .character {
@@ -285,6 +355,44 @@ h6 {
 /* 在 md 以上 xl 以下的尺寸 */
 @media (min-width: 768px) and (max-width: 1199px) {
 
+    /* stage */
+
+    .team-name {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .group-intro {
+        width: 75vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .group-photo {
+        max-width: 60vw;
+        height: auto;
+        max-height: 30vh;
+        width: auto;
+        margin-top: 8vh;
+    }
+
+    .group-content {
+        /* margin-top: 2vh; */
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        width: 55vw;
+        height: auto;
+    }
+
+    .group-content-intro {
+        margin-bottom: 2vh;
+        width: 55vw;
+        max-height: 20h;
+        padding: 8px;
+    }
+
+
     /* index */
     .character {
         margin-left: -20vw;
@@ -337,6 +445,66 @@ h6 {
 
 /* 在 md 以下的尺寸 */
 @media (max-width: 767px) {
+
+    /* stage */
+
+    .group-intro {
+        width: 75vw;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .group-photo {
+        max-width: 60vw;
+        max-height: 20vh;
+        width: auto;
+        height: auto;
+        margin-top: 5vh;
+    }
+
+    .straight-photo {
+        max-width: 60vw;
+        max-height: 23vh;
+        width: auto;
+        height: auto;
+    }
+
+    .team-name {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+
+    .group-content {
+        margin-top: 2vh;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        width: 40vw;
+        height: auto;
+    }
+
+    .mar-up1 {
+        margin-top: -10vh;
+    }
+
+    .mar-up2 {
+        margin-top: -15vh;
+    }
+
+    .mar-up3 {
+        margin-top: -25vh;
+    }
+
+    .group-content-intro {
+        margin-bottom: 2vh;
+        width: 40vw;
+        max-height: 15vh;
+        padding: 8px;
+    }
+
+
 
     /* index */
     .character {
@@ -434,7 +602,6 @@ footer {
     border-radius: 5px;
     /* background-color: #cce1e044; */
     width: 70vw;
-    height: 30vh;
     margin-bottom: 5vh;
     margin-top: 3vh;
     position: relative;
