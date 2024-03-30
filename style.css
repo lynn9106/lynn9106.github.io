@@ -350,6 +350,10 @@ h6 {
         line-height: 3rem;
         padding-bottom: 1rem;
     }
+
+    .intro-rules {
+        max-width: 35vw;
+    }
 }
 
 /* 在 md 以上 xl 以下的尺寸 */
@@ -491,10 +495,6 @@ h6 {
 
     .mar-up2 {
         margin-top: -15vh;
-    }
-
-    .mar-up3 {
-        margin-top: -25vh;
     }
 
     .group-content-intro {
